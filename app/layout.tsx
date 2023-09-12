@@ -1,6 +1,7 @@
 import './globals.css'
 import type {Metadata} from 'next'
 import {Figtree} from 'next/font/google'
+
 import Sidebar from "@/components/Sidebar";
 import SupabaseProvider from "@/providers/SupabaseProvider";
 import UserProvider from "@/providers/UserProvider";
@@ -21,6 +22,7 @@ export default function RootLayout({
 }) {
     return (
         <html lang="en">
+
         <body className={font.className}>
         <ToasterProvider />
         <SupabaseProvider>
@@ -30,7 +32,6 @@ export default function RootLayout({
                     {children}
                 </Sidebar>
             </UserProvider>
-
         </SupabaseProvider>
 
         </body>
