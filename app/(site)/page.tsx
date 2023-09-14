@@ -8,7 +8,6 @@ export const revalidate = 0;
 
 export default async function Home() {
     const songs = await getSongs();
-
     return (
         <div className="
     bg-neutral-900
